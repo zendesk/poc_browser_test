@@ -1,0 +1,7 @@
+.bundle
+.git
+.env
+.idea
+log
+tmp
+vendor/bundle

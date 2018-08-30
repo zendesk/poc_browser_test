@@ -1,0 +1,10 @@
+steps:
+  id: "build image"
+  name: "gcr.io/cloud-builders/docker"
+  args:
+    - "build"
+    - "--tag gcr.io/$PROJECT_ID}/apps/poc-brower-test:latest"
+    - "./"
+images:
+  - "gcr.io/$PROJECT_ID}/apps/poc-brower-test:latest"
+
