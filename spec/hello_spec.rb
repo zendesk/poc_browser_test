@@ -11,6 +11,6 @@ home_page_url = "http://#{host}:#{port}/"
 RSpec.describe 'Home page' do
 
   it 'should displays hello' do
-    expect(Nokogiri::HTML5.get(home_page_url).search('body').text).to eq(expected_text)
+    expect(Nokogiri::HTML5.get(home_page_url).search('body').text).to include(expected_text)
   end
 end
